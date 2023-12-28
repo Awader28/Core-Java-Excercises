@@ -14,6 +14,5 @@ public class Child extends Student {
 		child.nameString="AtharvaWader";
 		child.data();
 		child.demo();
-		
 	}
 }
