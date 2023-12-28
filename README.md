@@ -1,2 +1,2 @@
 # Core-Java-Excercises
-Contains simple code for demonstration of concepts of Core Java.
+Contains simple codes for demonstration of concepts of **Core Java**.
