@@ -18,6 +18,6 @@ public class Demo {
 //        while (!stack.isEmpty()) {
 //            System.out.println("Popped: " + stack.pop());
 //        }
-        System.out.println(stack.peek());
+        
     }
 }
