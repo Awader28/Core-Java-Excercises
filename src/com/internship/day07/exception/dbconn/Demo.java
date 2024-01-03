@@ -22,21 +22,25 @@ public class Demo {
             // Create a statement and execute the insert query
             Statement statement = con.createStatement();
             int rowsAffected = statement.executeUpdate(insert2);
-            statement.executeUpdate(insert2);
+            statement.executeUpdate(insert2); 
             if (rowsAffected > 0) {
                 System.out.println("Insertion successful");
             } else {
                 System.out.println("Insertion failed");
             }
 
-            // Close the connection and statement
             statement.close();
             con.close();
+            //Close the connection and statement
+            
 
         } catch (ClassNotFoundException e1) {
             System.out.println("DATABASE DRIVER NOT FOUND");
         } catch (SQLException e) {
             System.out.println("SQL RELATED EXCEPTION: " + e.getMessage());
         }
+        finally {
+        	
+		}
     }
 }
