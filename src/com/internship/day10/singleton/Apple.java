@@ -5,7 +5,8 @@ public class Apple {
 	private int id=10;
 	private String cityString="Pune";
 	private boolean isMale=true;
-	static Apple a1; //lazy object creation
+	
+	static final Apple a1 = new Apple();
 	static Apple a2=new Apple(); //eager object initialisation 
 	
 	//here object gets created even before it is required therefore eager initialisation;
@@ -55,7 +56,7 @@ public class Apple {
 
 	static void PrintStuff() {
 		
-		a1=new Apple(); //lazy initialisation
+		//a1=new Apple(); //lazy initialisation
 		
 		
 		a1.setCityString("Alibag");
@@ -65,6 +66,20 @@ public class Apple {
 		System.out.println(a1.getCityString());
 		System.out.println(a1.getId());
 		System.out.println(a1.isMale());
+		
+		a2.setCityString("Pyun");
+		a2.setId(123);
+		a2.setMale(true);
+		
+			System.out.println();
+		
+		System.out.println(a2.getCityString());
+		System.out.println(a2.getId());
+		System.out.println(a2.isMale());
+		
+		
+		
+		
 		
 		
 		

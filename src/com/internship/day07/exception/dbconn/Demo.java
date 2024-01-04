@@ -7,18 +7,18 @@ import java.sql.Statement;
 
 public class Demo {
     public static void main(String[] args) {
-        String driver = "com.mysql.jdbc.Driver";
-        String url = "jdbc:mysql://localhost:3306/avion?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false";
-        String user = "root";
-        String pass = "atharva28";
+        final String driver = "com.mysql.jdbc.Driver";
+        final String url = "jdbc:mysql://localhost:3306/avion?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false";
+        final String user = "root";
+        final String pass = "atharva28";
         //String insert = "INSERT INTO `internship`.`tblemployee` (`name`, `city`, `salary`) VALUES ('Atharva', 'Palghar', '12354');";
-        String insert2 = "INSERT INTO `internship`.`tblemployee` (`name`, `city`, `salary`) VALUES ('Soshor', 'Popoe', '12355984');";
+        final String insert2 = "INSERT INTO `internship`.`tblemployee` (`name`, `city`, `salary`) VALUES ('Soshor', 'Popoe', '12355984');";
 
         try {
             Class.forName(driver);
             Connection con = DriverManager.getConnection(url, user, pass);
             System.out.println("CONNECTION SUCCESSFUL");
-
+   
             // Create a statement and execute the insert query
             Statement statement = con.createStatement();
             int rowsAffected = statement.executeUpdate(insert2);
