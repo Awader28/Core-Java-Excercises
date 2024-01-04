@@ -1,4 +1,4 @@
-package com.internship.day11.ph;
+package com.internship.day11.Map;
 
 public class Student {
 
