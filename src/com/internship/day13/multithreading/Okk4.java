@@ -14,18 +14,6 @@ public class Okk4 {
 		}
 	}
 	
-	public static void rotString(char[] wawa, int l) {
-		int p=wawa.length;
-		l %=p;
-		
-		for(int i=0;i<l;i++) {
-			int temp2=wawa[l-1];
-			
-			
-		}
-		
-		
-	}
 
 	public static void main(String[] args) {
 		int[] myArray = { 1, 2, 3, 4, 5 };
