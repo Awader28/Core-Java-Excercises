@@ -10,6 +10,13 @@ public class Caller {
 		Thread t2= new Thread(r2);
 		Thread t3= new Thread(r3);
 		
+		Boss b= new Boss();
+		Client c = new Client();
+		Employee e = new Employee();
+		
+		
+		
+		
 		t1.start();
 		t2.start();
 		t3.start();
